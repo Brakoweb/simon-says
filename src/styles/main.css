@@ -3,6 +3,12 @@ body {
     color: white;
     font-family: 'Montserrat', sans-serif;
   }
+
+header{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
   
   .keyboard {
     display: flex;

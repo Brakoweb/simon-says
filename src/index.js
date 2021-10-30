@@ -6,7 +6,19 @@ const niveles = 15
           return alert('Ganaste')
         }
 
-        alert(`Nivel ${nivelActual + 1}`)
+        //alert(`Nivel ${nivelActual + 1}`)
+
+        //SweetAlert 2.0
+        if (nivelActual > 0){
+            Swal.fire({
+                icon: 'success',
+                title: `Level ${nivelActual + 1}`,
+                showConfirmButton: false,
+                timer: 700
+              });
+        }
+
+        
 
         for (let i = 0; i <= nivelActual; i++) {
           setTimeout(() => activate(teclas[i]), 
